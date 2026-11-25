@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keiki Strawberry · Catálogo</title>
+<meta name="description" content="Catálogo de Keiki Strawberry: maquillaje y ropa para toda la familia. Pide por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🍓%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="bgBerries" class="bg-berries" aria-hidden="true"></div>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div id="ann" class="ann"></div>
+<header class="top">
+  <a class="logo" href="#inicio">Keiki Strawberry</a>
+  <nav class="nav" aria-label="Principal"><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a></nav>
+  <form class="search" role="search"><input id="q" type="search" placeholder="Busca sombras, vestidos, poleras…" aria-label="Buscar productos"><button class="btn pri" type="submit">Buscar</button></form>
+  <details class="a11y"><summary class="btn">Accesibilidad</summary>
+    <div class="panel">
+      <button class="btn" data-a="plus">A+ Agrandar letra</button>
+      <button class="btn" data-a="minus">A− Reducir letra</button>
+      <button class="btn" data-a="hc">Alto contraste</button>
+      <button class="btn" data-a="read">Letra legible</button>
+      <button class="btn" data-a="ul">Subrayar enlaces</button>
+      <button class="btn" data-a="nomo">Sin animaciones</button>
+      <button class="btn" data-a="reset">Restablecer</button>
+    </div>
+  </details>
+  <button id="cartBtn" class="btn pri">Carrito <span id="cartN">0</span></button>
+</header>
+<main id="main">
+  <div id="pgHome">
+    <section class="hero">
+      <div>
+        <h1>Lo dulce de verte bien</h1>
+        <p>Maquillaje y ropa para toda la familia. Elige tus favoritos y haz tu pedido directo por WhatsApp.</p>
+        <a class="btn pri big" href="#catalogo">Ver catálogo</a>
+      </div>
+      <div class="berry" aria-hidden="true"></div>
+    </section>
+    <section class="wrap perks" aria-label="Por qué elegirnos">
+      <div><strong>Pide en minutos</strong><span>Arma tu carrito y envíalo por WhatsApp.</span></div>
+      <div><strong>Atención personal</strong><span>Coordinamos todo directo contigo en Chillán y San Carlos.</span></div>
+      <div><strong>Para toda la familia</strong><span>Maquillaje y ropa de mujer, hombre, niña y niño.</span></div>
+    </section>
+    <section class="wrap" aria-label="Ayuda para elegir"><div class="toolg">
+      <button class="tool" id="packB"><strong>Arma tu pack</strong><span id="packP"></span></button>
+      <button class="tool" id="quizB"><strong>Te ayudo a elegir</strong><span>Responde 2 preguntas y te recomendamos productos.</span></button>
+      <button class="tool" id="sizeB"><strong>Guía de tallas</strong><span>Calcula tu talla según tu estatura y peso.</span></button>
+    </div></section>
+    <section class="wrap about" id="nosotros">
+      <div><h2 id="abT"></h2><p id="abP"></p></div>
+      <div id="abLogo" class="logoBox"></div>
+    </section>
+    <section class="wrap" aria-label="Nuestros mejores productos"><h2>Nuestros favoritos</h2><p class="sub">Lo más pedido de la tienda.</p><div id="car" class="car" role="region" aria-roledescription="carrusel"></div></section>
+    <section class="wrap" id="dest" hidden><h2>Productos destacados</h2><p class="sub">Nuestras recomendaciones de la temporada.</p><div id="destL" class="prods"></div></section>
+    <section class="wrap" id="faq"><h2>Preguntas frecuentes</h2><div id="faqL"></div></section>
+  </div>
+  <div id="pgCat" hidden>
+    <section id="secciones" class="wrap"><h2>Catálogo</h2><p class="sub">Elige una sección o filtra tus productos favoritos.</p>
+      <div class="cl">
+        <aside><details id="sideD" class="side"><summary class="btn">Menú: secciones y filtros</summary><div id="side"></div></details></aside>
+        <div>
+          <div id="chips" class="chips"></div>
+          <div id="catHead" class="cat-head" hidden></div>
+          <div id="cats" class="tiles"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="ft">
+  <div class="ftg">
+    <div><strong class="flogo">Keiki Strawberry</strong><p>Maquillaje y ropa para toda la familia.</p></div>
+    <div>
+      <h3>Contacto y redes</h3>
+      <a id="ftWa" target="_blank" rel="noopener">WhatsApp</a>
+      <a id="ftIg" target="_blank" rel="noopener">Instagram</a>
+      <a id="ftTk" target="_blank" rel="https://www.tiktok.com/@shopkeiki">TikTok</a>
+      <a id="ftFb" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <div><h3>Atención</h3><p id="ftHr"></p><p id="ftUb"></p></div>
+  </div>
+  <p class="cp">© Keiki Strawberry</p>
+</footer>
+<div id="soc" class="soc" role="group" aria-label="Redes sociales"></div>
+<button id="up" class="up" aria-label="Volver arriba" hidden>↑</button>
+<div id="cmpBar" class="cmpbar" hidden></div>
+<dialog id="modal"></dialog>
+<dialog id="cart" class="drawer"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
